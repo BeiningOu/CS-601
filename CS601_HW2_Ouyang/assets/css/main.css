@@ -1,0 +1,53 @@
+#header-box {
+  position: relative;
+  background: linear-gradient(75deg, #ef9a9a 10%, #f2b69d 55%);
+  height: 300px;
+}
+
+
+#welcome{
+    position: relative;
+    z-index: 1;
+    text-align:center;
+    padding-top: 20px;
+}
+
+
+#contact{
+    position: relative;
+    z-index: 1;
+    text-align:center;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+#menu{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#menu li{
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+}
+
+#menu li a{
+    color: #FFFFFF;
+    margin:100px;
+    height:40px;
+    line-height: 50px;
+}
+
+#menu li a:hover{
+    color: #040404;
+}
+
+
+
+
+
+
+
+

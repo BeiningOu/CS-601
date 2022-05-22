@@ -4,48 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <header>
-      <h1>Beining's academic background</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="edu.html">Beining's academic background</a></li>
-          <li><a href="cat.html">Beining's Cat</a></li>
-        </ul>
-      </nav>
-    </header>
-    <hr />
-    <main>
-      <section>
-        <h4>Education</h4>
+    <div class="header-box">
+      <header class="header">
+        <h1>Beining's academic background</h1>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="edu.html">Beining's academic background</a></li>
+            <li><a href="cat.html">Beining's Cat</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <main class="box">
+      <div class="eduBox">
+        <h4 class="eduHeader">Education</h4>
+        <div id="eduMain">
         <dl>
           <dt>Boston University</dt>
           <dd>Master of Science: Software development Aug 2020 - Current</dd>
           <dd>Aug 2020 - Current</dd>
         </dl>
-        <dl>
+        <dl id = "psu">
           <dt>The Pennsylvania State University</dt>
           <dd>Master of Science: Agriculture and Biological Engineering</dd>
           <dd>Aug 2017 - May 2019</dd>
         </dl>
-      </section>
+      </div>
+      </div>
 
-      <section>
-        <h4>The courses Beining already took:</h4>
-
+      <section class="eduBox">
+        <h4 class="eduHeader">Courses</h4>
         <table>
-          <thead>
-            <tr>
+            <tr id="thead">
               <th>Courses</th>
               <th>Name</th>
               <th>Year</th>
             </tr>
-          </thead>
-          <tbody>
+          <tbody id = "tbody">
             <tr>
               <td>MET CS 521</td>
               <td>Information Structures with Python</td>
@@ -65,7 +67,7 @@
         </table>
       </section>
 
-      <section>
+      <section class="tableBox">
         <h4>Skills</h4>
         <ul>
           <li>Python</li>
@@ -81,8 +83,8 @@
         <img src="pictures/IMG_004.png" alt="out of the box" width="200" />
       </figure>
     </main>
-    <hr />
-    <footer>
+
+    <footer class="footer">
       <address>Contact: <a href="mailto:bouyang@bu.edu">Email me</a></address>
       <p>Copyright 2022. Beining Ouyang. All Rights Reserved.</p>
     </footer>

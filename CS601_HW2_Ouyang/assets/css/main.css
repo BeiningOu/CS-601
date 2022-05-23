@@ -126,21 +126,101 @@ dt {
 
 #eduMain {
   padding-left: 15px;
+  line-height: 40px;
 }
 
 #psu {
   border-top: 1px solid grey;
   padding-top: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#bu {
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 table {
   margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
   text-align: center;
+  line-height: 50px;
 }
 
 table td {
   border-top: 1px solid grey;
   height: 50px;
+}
+
+.outerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  background: linear-gradient(30deg, #bdbdbd, #eceff1 55%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#eduCat {
+  text-align: center;
+}
+
+#jumpCat {
+  align-items: center;
+}
+
+.tableBox {
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid grey;
+  border-radius: 25px;
+}
+.tableBox li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.tableBox h4 {
+  background: #bdbdbd;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.tableBox ul {
+  margin-right: 20px;
+}
+
+#topBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topBox article {
+    flex-basis: 500px;
+    margin-left: 50px;
+}
+
+#topBox article h4{
+    text-align: center;
+}
+#topBox section h4{
+    text-align: center;
+}
+
+#topBox section img{
+    margin-left: 20px;
+    margin-right: 20px;
 }

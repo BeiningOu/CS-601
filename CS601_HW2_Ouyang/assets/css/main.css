@@ -262,6 +262,7 @@ table td {
 /* use variable */
 /* use media queries  */
 
+
 @media screen and (max-width: 1280px) {
   h1 {
     padding-bottom: 0px;

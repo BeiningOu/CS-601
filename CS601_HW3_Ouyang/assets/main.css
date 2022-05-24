@@ -1,0 +1,13 @@
+.header-box {
+  position: relative;
+  background: linear-gradient(75deg, #ef9a9a 10%, #f2b69d 55%);
+  height: 80px;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}

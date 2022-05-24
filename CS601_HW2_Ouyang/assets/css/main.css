@@ -1,7 +1,13 @@
+:root{
+    --header-bg-color1:#f2b69d;
+    --main-bg-color: #bdbdbd;
+}
+
+
 .header-box {
   position: relative;
-  background: linear-gradient(75deg, #ef9a9a 10%, #f2b69d 55%);
-  height: 300px;
+  background: linear-gradient(75deg, #ef9a9a 10%, var(--header-bg-color1)55%);
+  height: 350px;
 }
 
 body {
@@ -13,21 +19,30 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+.header h1 {
+  padding-left: 10px;
+  text-shadow: 0px 3px 0px var(--header-bg-color1), 0px 14px 10px rgba(0, 0, 0, 0.15),
+    0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 15px;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .menu {
   font-size: 25px;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 50px;
+  padding-right: 20px;
 }
 
 .menu li {
@@ -56,7 +71,7 @@ ul {
   display: flex;
   align-items: center;
   padding-bottom: 30px;
-  background: linear-gradient(30deg, #bdbdbd, #eceff1 55%);
+  background: linear-gradient(30deg, var(--main-bg-color), #eceff1 55%);
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -113,7 +128,7 @@ article {
   border-bottom: 2px solid grey;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background: #bdbdbd;
+  background: var(--main-bg-color);
   margin-top: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -152,7 +167,7 @@ table {
 }
 
 table td {
-  border-top: 1px solid grey;
+  border-top: 2px solid grey;
   height: 50px;
 }
 
@@ -174,21 +189,21 @@ table td {
   align-items: center;
 }
 
-.tableBox {
+.skills {
   font-size: 20px;
   font-weight: bold;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-radius: 25px;
 }
-.tableBox li {
+.skills li {
   text-decoration: none;
   list-style: none;
   display: inline;
   margin-right: 10px;
 }
 
-.tableBox h4 {
-  background: #bdbdbd;
+.skills h4 {
+  background: var(--main-bg-color);
   text-align: center;
   margin-top: 0px;
   padding-top: 10px;
@@ -198,29 +213,101 @@ table td {
   border-top-right-radius: 25px;
 }
 
-.tableBox ul {
+.skills ul {
   margin-right: 20px;
 }
 
-#topBox {
+.innerBox {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-#topBox article {
-    flex-basis: 500px;
-    margin-left: 50px;
+.innerBox article {
+  flex-basis: 500px;
+  margin-left: 50px;
+  justify-content: right;
 }
 
-#topBox article h4{
-    text-align: center;
+.innerBox article h4 {
+  text-align: center;
 }
-#topBox section h4{
-    text-align: center;
+.innerBox section h4 {
+  text-align: center;
+  justify-items: center;
 }
 
-#topBox section img{
-    margin-left: 20px;
-    margin-right: 20px;
+.innerBox section {
+  justify-content: center;
+}
+
+.innerBox section img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#juliet {
+  flex-basis: 400px;
+  margin-left: 80px;
+  margin-right: 20px;
+}
+
+#juliet h4 {
+  text-align: center;
+}
+
+/* use variable */
+/* use media queries  */
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    padding-bottom: 0px;
+  }
+  .menu {
+    padding-top: 0px;
+  }
+  .menu li {
+    display: list-item;
+    padding: 0px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .contact {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .menu {
+      font-size: 20px;
+    }
+
+    .menu li a {
+      margin: 20px;
+      height: 20px;
+    }
+
+    .box {
+      flex-direction: column;
+    }
+    .summary {
+      max-width: 100%;
+    }
+
+    .innerBox {
+      flex-direction: column;
+    }
+
+    .innerBox article {
+      flex-basis: auto;
+      margin-left: 0px;
+    }
+    #juliet {
+      margin-left: 30px;
+      flex-basis: auto;
+    }
+  }
 }

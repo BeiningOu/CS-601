@@ -13,35 +13,37 @@
       <h1>Beining's Simple JavaScript Calculator</h1>
     </header>
 
-    <main class="main-box">
-      <p>Please type your name in the following blank:</p>
-      <input type="text" id="name" />
+    <main>
+      <div id="main-box">
+        <p>Please type your name in the following blank:</p>
+        <input type="text" id="name" />
 
-      <p class="welcome">Welcome to Beining's Simple JavaScript Calculator.</p>
-      <div id="calculator">
-        <table>
-          <tr>
-            <td>Please type first number in the following blank:</td>
-            <td>
-              <input type="number" id="first-number" />
-            </td>
-          </tr>
-          <tr>
-            <td>Please type second number in the following blank:</td>
-            <td>
-              <input type="number" id="second-number" />
-            </td>
-          </tr>
-        </table>
-
-        <button id="submit">submit</button>
+        <p class="welcome">
+          Welcome to Beining's Simple JavaScript Calculator.
+        </p>
+        <div id="calculator">
+          <table>
+            <tr>
+              <td>Please type first number in the following blank:</td>
+              <td>
+                <input type="number" id="first-number" />
+              </td>
+            </tr>
+            <tr>
+              <td>Please type second number in the following blank:</td>
+              <td>
+                <input type="number" id="second-number" />
+              </td>
+            </tr>
+          </table>
+          <button id="submit">submit</button>
+        </div>
+        <span id="sum-number">0</span>
+        <p id="big-small"></p>
+        <button id="try-again">Try again</button>
+        <button id="stop">STOP</button>
+        <script src="index.js"></script>
       </div>
-      <span id="sum-number">0</span>
-      <p id="big-small"></p>
-
-      <button id="try-again">Try again</button>
-
-      <script src="index.js"></script>
     </main>
 
     <footer class="more">

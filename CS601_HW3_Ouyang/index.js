@@ -5,8 +5,11 @@ function get(id) {
 }
 
 let submit = get("submit");
-let tryAgain = get('try-again');
+let tryAgain = get("try-again");
+let stopGame = get("stop");
 tryAgain.style.visibility = "hidden";
+stopGame.style.visibility = "hidden";
+let gameOn = true;
 
 submit.onclick = function () {
   let username = get("name");
@@ -22,17 +25,24 @@ submit.onclick = function () {
     console.log("big number");
   }
   if (twoSum <= 10) {
-    let smallnum = get("big-small");
-    smallnum.innerText = " small number";
+    let smallNum = get("big-small");
+    smallNum.innerText = " small number";
     console.log("small number");
   }
-  let calculator = get("calculator")
+  let calculator = get("calculator");
   calculator.style.visibility = "hidden";
   tryAgain.style.visibility = "visible";
+  stopGame.style.visibility = "visible";
+};
+tryAgain.onclick = function () {
+  calculator.style.visibility = "visible";
+  tryAgain.style.visibility = "hidden";
+  stopGame.style.visibility = "hidden";
+  let gameOn = true;
 };
 
-
-tryAgain.onclick = function(){
-
-
-}
+stopGame.onclick = function () {
+  let mainBox = get("main-box");
+  mainBox.style.display = "none";
+  let gameOn = false;
+};

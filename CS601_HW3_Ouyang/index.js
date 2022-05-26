@@ -1,32 +1,26 @@
-console.log("Hello World");
-
 function get(id) {
   return document.getElementById(id);
 }
-
-let submit = get("submit");
-let tryAgain = get("try-again");
-let stopGame = get("stop");
-tryAgain.style.visibility = "hidden";
-stopGame.style.visibility = "hidden";
-
-
-let bye = get("bye");
-bye.style.display = "none";
-
-
-let gameOn = true;
 
 let welcome = get("welcome");
 let username = get("name");
 let submitName = get("submit-name");
 let calculator = get("calculator");
+let submit = get("submit");
+let tryAgain = get("try-again");
+let stopGame = get("stop");
+let bye = get("bye");
+let gameOn = true;
+
+tryAgain.style.visibility = "hidden";
+stopGame.style.visibility = "hidden";
+bye.style.display = "none";
 calculator.style.visibility = "hidden";
 
 submitName.onclick = function () {
   calculator.style.visibility = "visible";
   welcome.innerText =
-    username.value + ": Welcome to Beining's Simple JavaScript Calculator";
+    username.value + ": welcome to Beining's simple JavaScript calculator";
   let nameBox = get("name-box");
   nameBox.style.display = "none";
 };
@@ -60,6 +54,7 @@ submit.onclick = function () {
   tryAgain.style.visibility = "visible";
   stopGame.style.visibility = "visible";
 };
+
 tryAgain.onclick = function () {
   calculator.style.display = "flex";
   tryAgain.style.visibility = "hidden";

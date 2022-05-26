@@ -17,8 +17,8 @@
   font-size: 20px;
 }
 
-#main-box button{
-    margin-top: 10px;
+#main-box button {
+  margin-top: 10px;
 }
 
 .header {
@@ -28,6 +28,10 @@
   padding-top: 20px;
   margin-bottom: 0px;
 }
+#welcome {
+  text-align: center;
+  font-weight: bold;
+}
 
 #calculator {
   z-index: 1;
@@ -36,6 +40,19 @@
   text-align: center;
   margin-right: 50px;
   margin-left: 50px;
+}
+
+table{
+    margin: auto;
+}
+
+.table-word {
+  text-align: right;
+}
+
+.table-blank {
+  text-align: left;
+  padding-left: 15px;
 }
 
 #calculator button {

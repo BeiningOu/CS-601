@@ -10,17 +10,18 @@
 
   <body>
     <header class="header-box">
-      <h1>Beining's Simple JavaScript Calculator</h1>
+      <h2>Beining's Simple JavaScript Calculator</h2>
     </header>
 
     <main>
       <div id="main-box">
-        <p>Please type your name in the following blank:</p>
-        <input type="text" id="name" />
+        <div id="name-box">
+          <p>Please type your name in the following blank:</p>
+          <input type="text" id="name" />
+          <button id="submit-name">confirm and start the calculator</button>
+        </div>
+        <p id="welcome"></p>
 
-        <p class="welcome">
-          Welcome to Beining's Simple JavaScript Calculator.
-        </p>
         <div id="calculator">
           <table>
             <tr>
@@ -38,7 +39,7 @@
           </table>
           <button id="submit">submit</button>
         </div>
-        <span id="sum-number">0</span>
+        <span id="sum-number"></span>
         <p id="big-small"></p>
         <button id="try-again">Try again</button>
         <button id="stop">STOP</button>
@@ -46,7 +47,7 @@
       </div>
     </main>
 
-    <footer class="more">
+    <footer>
       <address>Contact: <a href="mailto:bouyang@bu.edu">Email me</a></address>
       <p>Copyright 2022. Beining Ouyang. All Rights Reserved.</p>
     </footer>

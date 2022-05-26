@@ -9,11 +9,18 @@ let tryAgain = get("try-again");
 let stopGame = get("stop");
 tryAgain.style.visibility = "hidden";
 stopGame.style.visibility = "hidden";
+
+
+let bye = get("bye");
+bye.style.display = "none";
+
+
 let gameOn = true;
 
 let welcome = get("welcome");
 let username = get("name");
 let submitName = get("submit-name");
+let calculator = get("calculator");
 calculator.style.visibility = "hidden";
 
 submitName.onclick = function () {
@@ -48,7 +55,7 @@ submit.onclick = function () {
     smallNum.innerText = " This is a small number.";
     console.log("small number");
   }
-  let calculator = get("calculator");
+
   calculator.style.display = "none";
   tryAgain.style.visibility = "visible";
   stopGame.style.visibility = "visible";
@@ -63,5 +70,6 @@ tryAgain.onclick = function () {
 stopGame.onclick = function () {
   let mainBox = get("main-box");
   mainBox.style.display = "none";
+  bye.style.display = "block";
   let gameOn = false;
 };

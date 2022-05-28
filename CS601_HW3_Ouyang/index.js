@@ -23,7 +23,7 @@ if (person != null) {
   welcome.innerHTML = "Hello " + person + "! How are you today?";
   welcome.innerText =
     username.value + ": welcome to Beining's simple JavaScript calculator";
-  alert(
+  window.alert(
     "Hello!" +
       person +
       ": welcome to Beining's simple JavaScript calculator, let's do a sum of two numbers!"
@@ -45,78 +45,98 @@ submitName.onclick = function () {
     username.value + ": welcome to Beining's simple JavaScript calculator";
   let nameBox = get("name-box");
   nameBox.style.display = "none";
-}
+};
 
-  while (alertWindowMode) {
-    let firstNumber = prompt("Please type your first number");
-    let secondNumber = prompt("Please type your second number");
+while (alertWindowMode) {
+  let firstNumber = prompt("Please type your first number");
+  let secondNumber = prompt("Please type your second number");
+  firstNumber = parseInt(firstNumber);
+  secondNumber = parseInt(secondNumber);
 
-    // need to check whether it is a number.//
-    let sumOfTwo = Number(firstNumber.value) + Number(secondNumber.value);
+  let sumOfTwo = firstNumber + secondNumber;
 
-    window.confirm(sumOfTwo.value);
-
-    if (sumOfTwo > 10) {
-      let bigNumber = get("big-small");
-      alert("This is a big number.");
-    }
-    if (sumOfTwo <= 10) {
-      alert("This is a big number.");
-    }
-
-    let answer = window.confirm("Do one more time?");
-
-    alertWindowMode = false;
+  // need to check whether it is a number.//
+  if (isNaN(sumOfTwo)) {
+    window.alert("Invalid input, please try again");
+  } else {
+    window.alert(
+      "The sum of " +
+        firstNumber +
+        " and " +
+        secondNumber +
+        " is " +
+        sumOfTwo +
+        "."
+    );
   }
 
-  submitName.onclick = function () {
-    calculator.style.visibility = "visible";
-    welcome.innerText =
-      username.value + ": welcome to Beining's simple JavaScript calculator";
-    let nameBox = get("name-box");
-    nameBox.style.display = "none";
-  };
+  if (sumOfTwo > 10) {
+    let bigNumber = get("big-small");
+    alert(sumOfTwo + " is a big number.");
+  }
+  if (sumOfTwo <= 10) {
+    alert(sumOfTwo + " is a small number.");
+  }
 
-  submit.onclick = function () {
-    let username = get("name");
-    let numberOne = get("first-number");
-    let numberTwo = get("second-number");
-    let sum = get("sum-number");
-    let twoSum = Number(numberOne.value) + Number(numberTwo.value);
-    sum.innerText =
-      "The sum of " +
-      numberOne.value +
-      " and " +
-      numberTwo.value +
-      " is " +
-      twoSum;
-    console.log(twoSum);
-    if (twoSum > 10) {
-      let bigNum = get("big-small");
-      bigNum.innerText = "This is a big number.";
-      console.log("big number");
-    }
-    if (twoSum <= 10) {
-      let smallNum = get("big-small");
-      smallNum.innerText = " This is a small number.";
-      console.log("small number");
-    }
+  let again = window.confirm(
+    "Do one more time with windows? Press 'cancel' to try the interface mode."
+  );
 
-    calculator.style.display = "none";
-    tryAgain.style.visibility = "visible";
-    stopGame.style.visibility = "visible";
-  };
+  if (again == true) {
+    alertWindowMode = true;
+  } else {
+    alertWindowMode = false;
+  }
+}
 
-  tryAgain.onclick = function () {
-    calculator.style.display = "flex";
-    tryAgain.style.visibility = "hidden";
-    stopGame.style.visibility = "hidden";
-    let gameOn = true;
-  };
+submitName.onclick = function () {
+  calculator.style.visibility = "visible";
+  welcome.innerText =
+    username.value + ": welcome to Beining's simple JavaScript calculator";
+  let nameBox = get("name-box");
+  nameBox.style.display = "none";
+};
 
-  stopGame.onclick = function () {
-    let mainBox = get("main-box");
-    mainBox.style.display = "none";
-    bye.style.display = "block";
-    let gameOn = false;
-  };
+submit.onclick = function () {
+  let username = get("name");
+  let numberOne = get("first-number");
+  let numberTwo = get("second-number");
+  let sum = get("sum-number");
+  let twoSum = Number(numberOne.value) + Number(numberTwo.value);
+  sum.innerText =
+    "The sum of " +
+    numberOne.value +
+    " and " +
+    numberTwo.value +
+    " is " +
+    twoSum;
+  console.log(twoSum);
+  if (twoSum > 10) {
+    let bigNum = get("big-small");
+    bigNum.innerText = "This is a big number.";
+    console.log("big number");
+  }
+  if (twoSum <= 10) {
+    let smallNum = get("big-small");
+    smallNum.innerText = " This is a small number.";
+    console.log("small number");
+  }
+
+  calculator.style.display = "none";
+  tryAgain.style.visibility = "visible";
+  stopGame.style.visibility = "visible";
+};
+
+tryAgain.onclick = function () {
+  calculator.style.display = "flex";
+  tryAgain.style.visibility = "hidden";
+  stopGame.style.visibility = "hidden";
+  let gameOn = true;
+};
+
+stopGame.onclick = function () {
+  let mainBox = get("main-box");
+  mainBox.style.display = "none";
+  bye.style.display = "block";
+  let gameOn = false;
+};

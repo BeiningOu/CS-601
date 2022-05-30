@@ -7,6 +7,7 @@
   margin-right: -10px;
   background: linear-gradient(30deg, #ffe0b2, #ffecb3 65%);
 }
+
 #main-box {
   text-align: center;
   background: linear-gradient(30deg, #efebe9, #fff3e0 55%);
@@ -28,6 +29,7 @@
   padding-top: 20px;
   margin-bottom: 0px;
 }
+
 #welcome {
   text-align: center;
   font-weight: bold;
@@ -42,8 +44,8 @@
   margin-left: 50px;
 }
 
-table{
-    margin: auto;
+table {
+  margin: auto;
 }
 
 .table-word {

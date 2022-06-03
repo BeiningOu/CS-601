@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/main.css" />
+    <title>Beining's form</title>
+  </head>
+
+  <body>
+    <header class="header-box">
+      <h2>Beining's eT-shirt Factory</h2>
+    </header>
+
+    <main>
+      <p>Summer is coming! Let's create an electronic T-shirt for you:</p>
+
+      <form id="name-box" method="post" action="https://bucs601.com/submit.php">
+        <p>Please type your first name in the following blank:</p>
+        <input type="text" id="first-name" />
+
+        <p>Please type your last name in the following blank:</p>
+        <input type="text" id="last-name" />
+
+        <p>Please type facilitator's first name in the following blank:</p>
+        <input type="text" id="facilitator-name" />
+
+        <p>Please select your eT-shirt color:</p>
+        <input type="radio" id="blue" name="color" value="Blue" />  
+        <label for="blue">Blue</label>
+        <input type="radio" id="yellow" name="color" value="Green" />
+        <label for="green">Green</label>
+        <input type="radio" id="pink" name="color" value="Pink" />
+        <label for="pink">Pink</label>
+
+        <p>Please check what would you like to add to this T-shirt:</p>
+        <input
+          type="checkbox"
+          id="put-name-on"
+          name="put-name-on"
+          value="name-on"
+        />
+        <label for="put-name-on"> Your first name </label><br />
+        <input type="checkbox" id="flower" name="flower" value="flower" />
+        <label for="flower"> Flower</label><br />
+        <input type="checkbox" id="cat" name="cat" value="cat" />
+        <label for="cat"> A cute cat</label><br />
+
+        <br />
+
+        <button id="submit-name">submit</button>
+      </form>
+
+      <img src="assets/blueshirt.png" alt="blue-T-shirt" width="350" />
+
+      <img src="assets/yellowshirt.png" alt="yellow-T-shirt" width="350" />
+
+      <img src="assets/pinkshirt.png" alt="pink-T-shirt" width="350" />
+
+      <img src="assets/cat.png" alt="cat" width="100" />
+      <img src="assets/flower.png" alt="flower" width="100" />
+
+      <p id = 'name-on-shirt'>:</p>
+
+
+    </main>
+
+    <footer>
+      <address>Contact: <a href="mailto:bouyang@bu.edu">Email me</a></address>
+      <p>Copyright 2022. Beining Ouyang. All Rights Reserved.</p>
+      <p>Images credits:</p>
+      <a href="https://www.flaticon.com/free-icons/tshirt" title="tshirt icons"
+        >Tshirt icons created by Pixel perfect - Flaticon
+      </a>
+      <a href="https://www.flaticon.com/free-icons/flower" title="flower icons"
+        >Flower icons created by Vectors Market - Flaticon
+      </a>
+      <a href="https://www.flaticon.com/free-icons/cat" title="cat icons"
+        >Cat icons created by AomAm - Flaticon
+      </a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

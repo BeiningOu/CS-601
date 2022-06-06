@@ -5,10 +5,6 @@ let form = document.getElementById("form");
 let error = document.getElementById("error");
 let facilitator = document.getElementById("facilitator-name");
 
-console.log(lastName.value);
-
-
-
 form.addEventListener("submit", (e) => {
   let messages = [];
   if (

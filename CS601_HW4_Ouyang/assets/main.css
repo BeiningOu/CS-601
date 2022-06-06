@@ -81,6 +81,27 @@ table {
   margin-top: 10px;
   margin-bottom: 100px;
   margin-right: 20px;
+/* } */
+
+
+#header-box {
+  position: relative;
+  text-align: center;
+  line-height: 90px;
+  margin-top: -30px;
+  margin-left: -10px;
+  margin-right: -10px;
+  background: linear-gradient(30deg, #ffe0b2, #ffecb3 65%);
+}
+
+#main-box {
+  text-align: center;
+  background: linear-gradient(30deg, #efebe9, #fff3e0 55%);
+  margin-top: -25px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 100px;
+  font-size: 20px;
 }
 
 footer {
@@ -97,4 +118,8 @@ footer {
 
 footer address {
   margin-top: 8px;
-} */
+}
+
+footer a{
+  margin: 15px;
+}

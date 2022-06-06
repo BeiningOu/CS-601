@@ -17,18 +17,18 @@
     <main>
       <p>Summer is coming! Let's create an electronic T-shirt for you:</p>
 
-      <form id="form" method="post" action="index.html">
+      <form id="form" method="POST" action="https://bucs601.com/submit.php">
         <div id="error"></div>
         <p>Please type your first name in the following blank:</p>
-        <input type="text" id="first-name" value="Beining" required />
+        <input type="text" id="first-name" name="firstName" required />
 
         <p>Please type your last name in the following blank:</p>
-        <input type="text" id="last-name" value="Ouyang" required />
+        <input type="text" id="last-name" name="lastName" required />
         <p>Please type facilitator's first name in the following blank:</p>
-        <input type="text" id="facilitator-name" value="Christian" />
+        <input type="text" id="facilitator-name" name="facilitator" required />
 
         <p>Please select your eT-shirt color:</p>
-        <input type="radio" id="blue" name="color" value="Blue" />  
+        <input type="radio" id="blue" name="color" value="Blue" checked />  
         <label for="blue">Blue</label>
         <input type="radio" id="yellow" name="color" value="Green" />
         <label for="green">Green</label>

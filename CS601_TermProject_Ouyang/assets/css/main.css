@@ -1,0 +1,316 @@
+:root {
+  --header-bg-color1: #f2b69d;
+  --main-bg-color: #bdbdbd;
+}
+
+.header-box {
+  position: relative;
+  background: linear-gradient(75deg, #ef9a9a 10%, var(--header-bg-color1) 55%);
+  height: 380px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+.header h1 {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 5px;
+  text-shadow: 0px 3px 0px var(--header-bg-color1),
+    0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1),
+    0px 34px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.menu {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+
+.menu li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+}
+
+.menu li a {
+  color: #ffffff;
+  margin: 100px;
+  height: 40px;
+  line-height: 50px;
+}
+
+.menu li a:hover {
+  color: #040404;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  background: linear-gradient(30deg, var(--main-bg-color), #eceff1 55%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.summary {
+  max-width: 40%;
+}
+
+.photo {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+#selfie {
+  border-radius: 50%;
+  width: 200px;
+}
+
+#selfie:hover {
+  transition: all 1s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+article {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.midTitle {
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer {
+  background: linear-gradient(30deg, #efebe9, #fff3e0 55%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #52575c;
+  text-align: center;
+  font-style: normal;
+}
+
+.eduBox {
+  margin-top: 50px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.eduHeader {
+  border-bottom: 2px solid grey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: var(--main-bg-color);
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+dt {
+  font-weight: bold;
+}
+
+#eduMain {
+  padding-left: 15px;
+  line-height: 40px;
+}
+
+#psu {
+  border-top: 1px solid grey;
+  padding-top: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#bu {
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+table {
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  line-height: 50px;
+}
+
+table td {
+  border-top: 2px solid grey;
+  height: 50px;
+}
+
+.outerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  background: linear-gradient(30deg, #bdbdbd, #eceff1 55%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#eduCat {
+  text-align: center;
+}
+
+#jumpCat {
+  align-items: center;
+}
+
+.skills {
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid grey;
+  border-radius: 25px;
+}
+.skills li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.skills h4 {
+  background: var(--main-bg-color);
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.skills ul {
+  margin-right: 20px;
+}
+
+.innerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.innerBox article {
+  flex-basis: 500px;
+  margin-left: 50px;
+  justify-content: right;
+}
+
+.innerBox article h4 {
+  text-align: center;
+}
+.innerBox section h4 {
+  text-align: center;
+  justify-items: center;
+}
+
+.innerBox section {
+  justify-content: center;
+}
+
+.innerBox section img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#juliet {
+  flex-basis: 400px;
+  margin-left: 80px;
+  margin-right: 20px;
+}
+
+#juliet h4 {
+  text-align: center;
+}
+
+/* use variable */
+/* use media queries  */
+
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    padding-bottom: 0px;
+  }
+  .menu {
+    padding-top: 0px;
+  }
+  .menu li {
+    display: list-item;
+    padding: 0px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .contact {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .menu {
+      font-size: 20px;
+    }
+
+    .menu li a {
+      margin: 20px;
+      height: 20px;
+    }
+
+    .box {
+      flex-direction: column;
+    }
+    .summary {
+      max-width: 100%;
+    }
+
+    .innerBox {
+      flex-direction: column;
+    }
+
+    .innerBox article {
+      flex-basis: auto;
+      margin-left: 0px;
+    }
+    #juliet {
+      margin-left: 30px;
+      flex-basis: auto;
+    }
+  }
+}

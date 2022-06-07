@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Contact form</title>
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <header id="header-box">
+      <h2>Beining's eT-shirt Factory</h2>
+    </header>
+
+    <main id="main-box">
+      <p id="greeting">Contact</p>
+
+      <form id="form" method="GET" action="contact.html">
+        <div id="error"></div>
+
+        <p>
+          Anything you want to say to Beining? Fill out the following form and
+          let's get connected!
+        </p>
+
+        <p>Your name</p>
+        <input type="text" id="your-name" name="yourName" required />
+
+        <p>Email</p>
+        <input type="text" id="your-email" name="yourEmail" required />
+
+        <p>Message</p>
+        <input type="text" id="your-meaasge" name="yourMessage" required />
+
+        <p>Reason</p>
+        <input type="radio" id="work-type" name="contactType" checked />
+        <label for="work-type">Work</label>
+        <input type="radio" id="commercial-type" name="contactType" />
+        <label for="commercial-type">Commercial</label>
+        <input type="radio" id="academic-type" name="contactType" />
+        <label for="academic-type">Academic</label>
+        <input type="radio" id="other-type" name="contactType" />
+        <label for="other-type">Other</label>
+
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+
+      
+    </main>
+
+    <footer>
+      <address>Contact: <a href="mailto:bouyang@bu.edu">Email me</a></address>
+      <p>Copyright 2022. Beining Ouyang. All Rights Reserved.</p>
+      <p>Images credits:</p>
+      <a href="https://www.flaticon.com/free-icons/tshirt" title="tshirt icons">
+        Tshirt icons created by Pixel perfect - Flaticon
+      </a>
+      <a href="https://www.flaticon.com/free-icons/flower" title="flower icons">
+        Flower icons created by Vectors Market - Flaticon
+      </a>
+      <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">
+        Cat icons created by AomAm - Flaticon
+      </a>
+    </footer>
+  </body>
+</html>

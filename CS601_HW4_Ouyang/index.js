@@ -22,7 +22,9 @@ pinkShirt.style.display = "none";
 cat.style.display = "none";
 flower.style.display = "none";
 
-form.addEventListener("submit", (e) => {
+// validation code:
+form.addEventListener("submit", validate);
+function validate(event) {
   let messages = [];
   if (
     firstName.value.length < 2 ||
@@ -53,11 +55,12 @@ form.addEventListener("submit", (e) => {
   }
 
   if (messages.length > 0) {
-    e.preventDefault();
-    error.innerText = "Error: "+ messages.join("; ");
+    event.preventDefault();
+    error.innerText = "Error: " + messages.join("; ");
   }
-});
+}
 
+//display shirt
 seeShirt.onclick = function () {
   if (get("blue").checked) {
     blueShirt.style.display = "";

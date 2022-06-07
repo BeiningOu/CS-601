@@ -33,22 +33,22 @@
   padding-bottom: 30px;
 }
 
-#error{
+#error {
   font-size: 23px;
   padding-top: 20px;
-  color:red;
+  color: red;
   font-weight: bold;
 }
 
-#see-shirt-button{
+#see-shirt-button {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
   font-size: 20px;
-  background-color: #6ca3d6;
+  background-color: #1a6860;
   border: none;
   color: #ffffff;
-  width: 200px;
+  width: 250px;
   padding: 5px;
   border-radius: 16px;
   cursor: pointer;
@@ -56,7 +56,7 @@
 
 #see-shirt-button:hover {
   background-color: #fff;
-  color: #1795bb;
+  color: #0a3c29;
 }
 
 #submit-button {
@@ -79,23 +79,9 @@
 }
 
 
-
-
-
-#check-outer-box {
-  display: flex;
-  justify-content: center;
-}
-
-#checkbox {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-#checkbox label {
+ #checkbox label {
   padding-right: 50px;
-}
+} 
 
 #shirts {
   padding-top: 50px;

@@ -21,16 +21,18 @@
 
       <form id="form" method="POST" action="https://bucs601.com/submit.php">
         <div id="error"></div>
+
         <p>Please type your first name in the following blank:</p>
         <input type="text" id="first-name" name="firstName" required />
 
         <p>Please type your last name in the following blank:</p>
         <input type="text" id="last-name" name="lastName" required />
+
         <p>Please type facilitator's first name in the following blank:</p>
         <input type="text" id="facilitator-name" name="facilitator" required />
 
         <p>Please select your eT-shirt color:</p>
-        <input type="radio" id="blue" name="color" value="Blue" checked />  
+        <input type="radio" id="blue" name="color" value="Blue" checked />
         <label for="blue">Blue</label>
         <input type="radio" id="yellow" name="color" value="Yellow" />
         <label for="yellow">Yellow</label>
@@ -41,24 +43,22 @@
           Please check what would you like to add to this T-shirt(optional):
         </p>
 
-        <div id="check-outer-box">
-          <div id="checkbox">
-            <div>
-              <input
-                type="checkbox"
-                id="flower-box"
-                name="flower-box"
-                value="flower-box"
-              />
-              <label for="flowerbox"> Flower</label>
-            </div>
-            <div>
-              <input type="checkbox" id="cat-box" name="cat-box" value="cat" />
-              <label for="cat-box"> A cute cat</label>
-            </div>
-          </div>
+        <div id="checkbox">
+          <input
+            type="checkbox"
+            id="flower-box"
+            name="flower-box"
+            value="flower-box"
+          />
+          <label for="flower-box"> Flower</label>
+
+          <input type="checkbox" id="cat-box" name="cat-box" value="cat" />
+          <label for="cat-box"> A cute cat</label>
         </div>
-        <button id="see-shirt-button">See your eT-shirt</button>
+
+        <button type="button" id="see-shirt-button">
+          See your eT-shirt below
+        </button>
         <button type="submit" id="submit-button">Submit</button>
       </form>
 

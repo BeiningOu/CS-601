@@ -1,9 +1,26 @@
-let firstName = document.getElementById("first-name");
-let lastName = document.getElementById("last-name");
+function get(id) {
+  return document.getElementById(id);
+}
 
-let form = document.getElementById("form");
-let error = document.getElementById("error");
-let facilitator = document.getElementById("facilitator-name");
+let firstName = get("first-name");
+let lastName = get("last-name");
+
+let form = get("form");
+let error = get("error");
+let facilitator = get("facilitator-name");
+
+let blueShirt = get("blue-shirt");
+let yellowShirt = get("yellow-shirt");
+let pinkShirt = get("pink-shirt");
+let cat = get("cat");
+let flower = get("flower");
+let seeShirt = get("see-shirt-button");
+
+blueShirt.style.display = "none";
+yellowShirt.style.display = "none";
+pinkShirt.style.display = "none";
+cat.style.display = "none";
+flower.style.display = "none";
 
 form.addEventListener("submit", (e) => {
   let messages = [];
@@ -37,6 +54,38 @@ form.addEventListener("submit", (e) => {
 
   if (messages.length > 0) {
     e.preventDefault();
-    error.innerText = messages.join("; ");
+    error.innerText = "Error: "+ messages.join("; ");
   }
 });
+
+seeShirt.onclick = function () {
+  if (get("blue").checked) {
+    blueShirt.style.display = "";
+  } else {
+    blueShirt.style.display = "None";
+  }
+
+  if (get("yellow").checked) {
+    yellowShirt.style.display = "";
+  } else {
+    yellowShirt.style.display = "None";
+  }
+
+  if (get("pink").checked) {
+    pinkShirt.style.display = "";
+  } else {
+    pinkShirt.style.display = "None";
+  }
+
+  if (get("flower-box").checked) {
+    flower.style.display = "";
+  } else {
+    flower.style.display = "none";
+  }
+
+  if (get("cat-box").checked) {
+    cat.style.display = "";
+  } else {
+    cat.style.display = "None";
+  }
+};

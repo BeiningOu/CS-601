@@ -10,12 +10,14 @@
   </head>
 
   <body>
-    <header id="header-box" >
+    <header id="header-box">
       <h2>Beining's eT-shirt Factory</h2>
     </header>
 
     <main id="main-box">
-      <p>Summer is coming! Let's create an electronic T-shirt for you:</p>
+      <p id="greeting">
+        Summer is coming! Let's create an electronic T-shirt for you:
+      </p>
 
       <form id="form" method="POST" action="https://bucs601.com/submit.php">
         <div id="error"></div>
@@ -30,41 +32,58 @@
         <p>Please select your eT-shirt color:</p>
         <input type="radio" id="blue" name="color" value="Blue" checked />  
         <label for="blue">Blue</label>
-        <input type="radio" id="yellow" name="color" value="Green" />
-        <label for="green">Green</label>
+        <input type="radio" id="yellow" name="color" value="Yellow" />
+        <label for="yellow">Yellow</label>
         <input type="radio" id="pink" name="color" value="Pink" />
         <label for="pink">Pink</label>
 
         <p>
           Please check what would you like to add to this T-shirt(optional):
         </p>
-        <input
-          type="checkbox"
-          id="put-name-on"
-          name="put-name-on"
-          value="name-on"
-        />
-        <label for="put-name-on"> Your first name </label><br />
-        <input type="checkbox" id="flower" name="flower" value="flower" />
-        <label for="flower"> Flower</label><br />
-        <input type="checkbox" id="cat" name="cat" value="cat" />
-        <label for="cat"> A cute cat</label><br />
 
-        <br />
-
-        <button id="submit-name">submit</button>
+        <div id="check-outer-box">
+          <div id="checkbox">
+            <div>
+              <input
+                type="checkbox"
+                id="flower-box"
+                name="flower-box"
+                value="flower-box"
+              />
+              <label for="flowerbox"> Flower</label>
+            </div>
+            <div>
+              <input type="checkbox" id="cat-box" name="cat-box" value="cat" />
+              <label for="cat-box"> A cute cat</label>
+            </div>
+          </div>
+        </div>
+        <button id="see-shirt-button">See your eT-shirt</button>
+        <button type="submit" id="submit-button">Submit</button>
       </form>
 
-      <img src="assets/blueshirt.png" alt="blue-T-shirt" width="350" />
-
-      <img src="assets/yellowshirt.png" alt="yellow-T-shirt" width="350" />
-
-      <img src="assets/pinkshirt.png" alt="pink-T-shirt" width="350" />
-
-      <img src="assets/cat.png" alt="cat" width="100" />
-      <img src="assets/flower.png" alt="flower" width="100" />
-
-      <p id="name-on-shirt">:</p>
+      <div id="shirts">
+        <img
+          id="blue-shirt"
+          src="assets/blueshirt.png"
+          alt="blue-T-shirt"
+          width="400"
+        />
+        <img
+          id="yellow-shirt"
+          src="assets/yellowshirt.png"
+          alt="yellow-T-shirt"
+          width="400"
+        />
+        <img
+          id="pink-shirt"
+          src="assets/pinkshirt.png"
+          alt="pink-T-shirt"
+          width="400"
+        />
+        <img id="cat" src="assets/cat.png" alt="cat" width="80" />
+        <img id="flower" src="assets/flower.png" alt="flower" width="80" />
+      </div>
     </main>
 
     <footer>

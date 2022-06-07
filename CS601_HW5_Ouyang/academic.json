@@ -1,0 +1,22 @@
+[
+  {
+    "School name": "Boston University",
+    "Program/Major": "Software development",
+    "Degree type": "M.S.",
+    "Year conferred": "2023"
+  },
+  
+  {
+    "School name": "The Pennsylvania State University",
+    "Program/Major": "Agriculture and Biological Engineering",
+    "Degree type": "M.S.",
+    "Year conferred": "2019"
+  },
+
+  {
+    "School name": "South China University of Technology",
+    "Program/Major": "Food Science and Engineering",
+    "Degree type": "B.Eng.",
+    "Year conferred": "2016"
+  }
+]

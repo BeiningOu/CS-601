@@ -10,44 +10,67 @@
   </head>
 
   <body>
-    <header id="header-box">
-      <h2>Beining's eT-shirt Factory</h2>
+    <header class="header-box">
+      <h2>MENU</h2>
     </header>
 
     <main id="main-box">
-      <p id="greeting">Contact</p>
+      <p id="greeting">CONTACT</p>
 
       <form id="form" method="GET" action="contact.html">
         <div id="error"></div>
 
-        <p>
+        <h5>
           Anything you want to say to Beining? Fill out the following form and
           let's get connected!
-        </p>
+        </h5>
 
-        <p>Your name</p>
-        <input type="text" id="your-name" name="yourName" required />
+        <div id="main-form">
+          <p>Your name</p>
+          <input
+            class="input-text"
+            type="text"
+            id="your-name"
+            name="yourName"
+            placeholder="Name"
+            required
+          />
 
-        <p>Email</p>
-        <input type="text" id="your-email" name="yourEmail" required />
+          <p>Email</p>
+          <input
+            class="input-text"
+            type="text"
+            id="your-email"
+            name="yourEmail"
+            placeholder="what's your Email?"
+            required
+          />
+          <p>Message</p>
+          <textarea
+            class="input-text"
+            type="text"
+            id="your-message"
+            name="yourMessage"
+            placeholder="Message to Beining..."
+            rows="10"
+            cols="33"
+            required
+          ></textarea>
 
-        <p>Message</p>
-        <input type="text" id="your-meaasge" name="yourMessage" required />
-
-        <p>Reason</p>
-        <input type="radio" id="work-type" name="contactType" checked />
-        <label for="work-type">Work</label>
-        <input type="radio" id="commercial-type" name="contactType" />
-        <label for="commercial-type">Commercial</label>
-        <input type="radio" id="academic-type" name="contactType" />
-        <label for="academic-type">Academic</label>
-        <input type="radio" id="other-type" name="contactType" />
-        <label for="other-type">Other</label>
-
-        <button type="submit" id="submit-button">Submit</button>
+          <p>Reason</p>
+          <input type="radio" id="work-type" name="contactType" checked />
+          <label for="work-type">Work</label>
+          <input type="radio" id="commercial-type" name="contactType" />
+          <label for="commercial-type">Commercial</label>
+          <input type="radio" id="academic-type" name="contactType" />
+          <label for="academic-type">Academic</label>
+          <input type="radio" id="other-type" name="contactType" />
+          <label for="other-type">Other</label>
+        </div>
+        <div id="submit-button-box">
+          <button type="submit" id="submit-button">Submit</button>
+        </div>
       </form>
-
-      
     </main>
 
     <footer>

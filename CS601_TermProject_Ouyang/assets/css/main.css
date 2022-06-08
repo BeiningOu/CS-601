@@ -6,7 +6,8 @@
 .header-box {
   position: relative;
   background: linear-gradient(75deg, #ef9a9a 10%, var(--header-bg-color1) 55%);
-  height: 380px;
+  height: 30px;
+  text-align: center;
 }
 
 body {
@@ -103,6 +104,86 @@ article {
   padding-left: 20px;
   padding-right: 20px;
   text-align: justify;
+}
+
+#main-box {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+#greeting {
+  font-family: Georgia, serif;
+  color: rgb(53, 49, 49);
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+form {
+  font-family: Georgia, serif;
+  align-items: center;
+  margin-left: 23%;
+  margin-right: 20%;
+  margin-bottom: 100px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: grey;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+form h5 {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 3%;
+  padding-bottom: 20px;
+}
+
+form p {
+  margin-bottom: 0;
+}
+
+.input-text {
+  border: 0;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-color: grey;
+  width: 75%;
+  font-size: 20px;
+  appearance: none;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: 2px 2px 0 2px;
+  height: 56px;
+  font-weight: 400;
+  background: #ffffff;
+}
+
+.input-text:focus {
+  background: rgba(205, 205, 205, 0.221);
+  outline: none;
+}
+
+#main-form {
+  font-family: Georgia, serif;
+  margin-left: 15%;
+  padding-bottom: 50px;
+}
+
+#your-message{
+  padding-top: 20px;
+  height: 100px;
+}
+
+#submit-button {
+  display: block;
+  margin: 0 auto;
+}
+
+#submit-button-box {
+  padding-bottom: 50px;
 }
 
 .midTitle {
@@ -261,7 +342,6 @@ table td {
 
 /* use variable */
 /* use media queries  */
-
 
 @media screen and (max-width: 1280px) {
   h1 {

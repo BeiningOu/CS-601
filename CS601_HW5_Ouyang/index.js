@@ -1,6 +1,7 @@
+// get the JSON file from local using "fetch"
 document.addEventListener("click", () => {
-  let url = "https://learnwebcode.github.io/json-example/animals-1.json";
-  fetch(url)
+  let url = "academic.json";
+  fetch("academic.json")
     .then((response) => {
       console.log("response.headers: " + response.headers);
       console.log("response.status: " + response.status);

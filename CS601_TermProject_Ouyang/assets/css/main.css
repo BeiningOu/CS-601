@@ -6,7 +6,7 @@
 .header-box {
   position: relative;
   background: linear-gradient(75deg, #ef9a9a 10%, var(--header-bg-color1) 55%);
-  height: 30px;
+  height: 200px;
   text-align: center;
 }
 
@@ -172,7 +172,7 @@ form p {
   padding-bottom: 50px;
 }
 
-#your-message{
+#your-message {
   padding-top: 20px;
   height: 100px;
 }
@@ -393,4 +393,17 @@ table td {
       flex-basis: auto;
     }
   }
+}
+
+#happy-balls{
+  height: 300px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50px;
+  background-color: #E1F5FE;
+  overflow: hidden;
+}
+
+#js-project{
+  text-align: center;
 }

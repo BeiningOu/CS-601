@@ -16,13 +16,32 @@ main {
     margin-left: -10px;
     margin-right: -10px;
     padding-top: 10px;
-    padding-bottom: 450px;
+    padding-bottom: 120px;
     font-size: 23px;
   }
+
+#fetch-locally{
+  color: rgb(5, 5, 5);
+  padding-left: 30%;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  text-align: left;
+  line-height: 2px;
+}
+
+#click-here{
+  margin-top: 50px;
+}
+
 
 #fetch-button {
   display: block;
   margin: 0 auto;
+}
+
+#fetch-externally{
+  color: rebeccapurple;
+  line-height: 3px;
 }
 
 footer {

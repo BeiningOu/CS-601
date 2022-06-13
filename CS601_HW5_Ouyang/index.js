@@ -7,8 +7,8 @@ let btn_local = get("click-here");
 btn_local.addEventListener("click", () => {
   fetch("academic.json")
     .then((response) => {
-      console.log("response.headers: " + response.headers);
-      console.log("response.status: " + response.status);
+      console.log("response.headers: " + response.headers); 
+      console.log("response.status: " + response.status); // print out status code
       console.log("response.statusText: " + response.statusText);
       return response.json();
     })

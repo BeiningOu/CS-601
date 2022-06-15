@@ -9,6 +9,17 @@
     <script defer src="index.js"></script>
   </head>
   <body>
-    <div id="app">Message: {{ msg }}</div>
+    <div id="app">
+      <p>Message: {{ msg }}</p>
+      <img
+        :src="pictureBigcat"
+        @mouseover="mouseover"
+        @mouseleave="mouseleave"
+        alt="big cat"
+        width="400"
+      />
+      <img src="assets/bigcat.jpg" alt=" big cat" width="330" />
+      <img src="assets/kitten.png" alt="kitten" width="330" />
+    </div>
   </body>
 </html>

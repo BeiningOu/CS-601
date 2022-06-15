@@ -5,21 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue.js - Assignment 6</title>
+    <link rel="stylesheet" href="assets/main.css" />
     <script src="https://unpkg.com/vue@3"></script>
     <script defer src="index.js"></script>
   </head>
   <body>
     <div id="app">
-      <p>Message: {{ msg }}</p>
+      <button>You clicked: {{ msg }}</button>
       <img
-        :src="pictureBigcat"
+        :src="pictureTrans"
         @mouseover="mouseover"
         @mouseleave="mouseleave"
         alt="big cat"
         width="400"
       />
-      <img src="assets/bigcat.jpg" alt=" big cat" width="330" />
-      <img src="assets/kitten.png" alt="kitten" width="330" />
+
+      <button @click="changePic">
+        {{kitten ? 'Show big cat' : 'Hide big cat'}}
+      </button>
+      <button @click="changePic">
+        {{kitten ? 'Show kitten' : 'Hide kitten'}}
+      </button>
+
+      <img
+        id="big-cat"
+        v-if="kitten"
+        src="assets/bigcat.jpg"
+        alt=" big cat"
+        width="330"
+      />
+      <template v-if="kitten">
+        <img id="small-cat" src="assets/kitten.png" alt="kitten" width="330" />
+      </template>
     </div>
+
+    <footer>
+      <address>Contact: <a href="mailto:bouyang@bu.edu">Email me</a></address>
+      <p>Copyright 2022. Beining Ouyang. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

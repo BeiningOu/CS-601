@@ -1,20 +1,63 @@
-#big-cat{
-  display: block;
+#header-box {
+  position: relative;
+  text-align: center;
+  line-height: 90px;
+  margin-top: -30px;
+  margin-left: -10px;
+  margin-right: -10px;
+  background: linear-gradient(30deg, #cedbe8, #bdd7e3 65%);
 }
 
-
-#small-cat{
-  display: block;
+#app {
+  text-align: center;
+  background: #e0f2f1;
+  margin-top: -25px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-size: 20px;
 }
 
-button{
+#counter {
+  margin-bottom: 40px;
+}
+
+.wrap {
+  border-bottom: 1px dashed rgb(0, 0, 0);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20px;
+
+}
+
+#picture-trans {
   display: block;
-  margin: auto ;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+#big-cat {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#small-cat {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+button {
+  display: block;
+  margin: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
-  background: linear-gradient(30deg, #bbdefb, #b3e5fc 65%);
+  background: linear-gradient(30deg, #cedbe8, #bdd7e3 65%);
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: -10px;

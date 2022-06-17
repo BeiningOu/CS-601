@@ -10,33 +10,57 @@
     <script defer src="index.js"></script>
   </head>
   <body>
+    <header id="header-box">
+      <h3>Assignment 6 --- Vue.js</h3>
+    </header>
+
     <div id="app">
-      <button>You clicked: {{ msg }}</button>
-      <img
-        :src="pictureTrans"
-        @mouseover="mouseover"
-        @mouseleave="mouseleave"
-        alt="big cat"
-        width="400"
-      />
+      <div class="wrap">
+        <p>Counter practice in Vue.js.</p>
+        <button id="counter" @click="increment">
+          You clicked: {{ counter }}
+        </button>
+      </div>
 
-      <button @click="changePic">
-        {{kitten ? 'Show big cat' : 'Hide big cat'}}
-      </button>
-      <button @click="changePic">
-        {{kitten ? 'Show kitten' : 'Hide kitten'}}
-      </button>
+      <div class="wrap">
+        <p>Move your mouse on the following picture to see a kitten.</p>
+        <img
+          id="picture-trans"
+          :src="pictureTrans"
+          @mouseover="mouseover"
+          @mouseleave="mouseleave"
+          alt="big cat"
+          width="200"
+        />
+      </div>
 
-      <img
-        id="big-cat"
-        v-if="kitten"
-        src="assets/bigcat.jpg"
-        alt=" big cat"
-        width="330"
-      />
-      <template v-if="kitten">
-        <img id="small-cat" src="assets/kitten.png" alt="kitten" width="330" />
-      </template>
+      <div class="wrap">
+        <p> v-if practice.</p>
+        <button @click="bigCat = !bigCat">
+          {{!bigCat ? 'Show big cat' : 'Hide big cat'}}
+        </button>
+        <img
+          id="big-cat"
+          v-if="bigCat"
+          src="assets/bigCat.jpg"
+          alt=" big cat"
+          width="200"
+        />
+      </div>
+
+      <div class="wrap">
+        <p> v-show practice.</p>
+        <button @click="showKitten = !showKitten">
+          {{!showKitten ? 'Show kitten' : 'Hide kitten'}}
+        </button>
+        <img
+          v-show="showKitten"
+          id="small-cat"
+          src="assets/kitten.png"
+          alt="kitten"
+          width="200"
+        />
+      </div>
     </div>
 
     <footer>

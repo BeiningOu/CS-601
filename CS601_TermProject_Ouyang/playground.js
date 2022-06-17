@@ -20,16 +20,75 @@ function randomColor() {
 
 console.log(randomColor());
 
-// drawBall
-function drawBall() {
-  let ballX= Math.random() * 20;
-  let ballY= Math.random() * 20;
-  let ballR= Math.random() * 20;
-  let colorOfBall = randomColor();
-  ctx.beginPath();
-  ctx.arc(ballX, ballY, ballR, 0, 2 * Math.PI); //arc to draw a circle
-  ctx.fillStyle = colorOfBall; //set color of the ball
-  ctx.fill();
+class Ball {
+  constructor(x, y, r, color, velX, velY) {
+    this.x = x;
+    this.y = y;
+    this.r = r;
+    this.color = color;
+    this.velX = velX;
+    this.velY = velY;
+    this.drawBall();
+  }
+
+  // drawBall method
+  drawBall() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI); //arc to draw a circle
+    ctx.fillStyle = this.color; //set color of the ball
+    ctx.fill();
+    console.log(this.x, this.y, this.r);
+  }
+
+  // update method
+  updateBall() {
+    if (this.x + this.r >= canvas.width) {
+      this.velX = -this.velX;
+    }
+    if (this.x - this.r <= 0) {
+      this.velX = -this.velX;
+    }
+
+    if (this.y + this.r >= canvas.height) {
+      this.velY = -this.velY;
+    }
+    if (this.y - this.r <= 0) {
+      this.velY = -this.velY;
+    }
+    this.x += this.velX;
+    this.y += this.velY;
+    this.drawBall();
+  }
 }
 
-drawBall();
+// ball creator
+function createBall() {
+  let canvasW = canvas.width;
+  let canvasH = canvas.height;
+  //console.log(canvasW, canvasH);
+  let ballR = Math.random() * 10 + 5;
+  let ballX = Math.random() * (canvasW - 2 * ballR) + ballR;
+  // involve radius to avoid boundary
+  let ballY = Math.random() * (canvasH - 2 * ballR) + ballR;
+  let colorOfBall = randomColor();
+  let velX = Math.random();
+  let velY = Math.random();
+  return new Ball(ballX, ballY, ballR, colorOfBall, velX, velY);
+}
+
+// now we create 25 balls and keep in the array
+let balls = [];
+for (let i = 0; i < 25; i++) {
+  balls.push(createBall());
+}
+
+function animate() {
+  //clean the canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let i = 0; i < balls.length; i++) {
+    balls[i].updateBall();
+    balls[i].drawBall();
+  }
+  requestAnimationFrame(animate);
+}
+animate();

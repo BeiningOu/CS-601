@@ -1,10 +1,14 @@
 :root {
   --header-bg-color1: #f2b69d;
-  --main-bg-color: #bdbdbd;
+  --main-bg-color: #dfdfdf;
+}
+
+body {
+  font-family: Varela Round, arial, sans-serif;
+  margin: 0px;
 }
 
 .header-box {
-  font-family: Varela Round, arial, sans-serif;
   font-size: 20px;
   line-height: 1.2em;
   text-transform: uppercase;
@@ -19,11 +23,6 @@
   background: rgb(241, 241, 241);
   /* height: 200px; */
   text-align: center;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px;
 }
 
 .header {
@@ -65,10 +64,9 @@ body {
 
 .menu {
   font-size: 18px;
-  /* font-weight: bold; */
   padding-right: 20px;
   display: block;
-  font-family: Varela Round, arial, sans-serif;
+  /* font-family: Varela Round, arial, sans-serif; */
   font-weight: normal;
 
   line-height: 1.6em;
@@ -111,26 +109,45 @@ ul {
 }
 
 .box {
-  display: flex;
+  display: block;
+  text-align: center;
   align-items: center;
   padding-bottom: 30px;
-  background: linear-gradient(30deg, var(--main-bg-color), #eceff1 55%);
+  background: linear-gradient(rgb(241, 241, 241), var(--main-bg-color));
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .summary {
-  max-width: 40%;
+  color: hsl(0, 0%, 6%);
+  font-family: Georgia, serif;
+  font-size: 19px;
+  line-height: 1.8em;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 12%;
+  margin-right: 10%;
+/*   
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
 }
 
 .photo {
   padding-top: 60px;
   padding-bottom: 30px;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #selfie {
   border-radius: 50%;
   width: 200px;
+  margin-left: 20px;
 }
 
 #selfie:hover {
@@ -147,13 +164,11 @@ article {
 }
 
 #main-box {
-  font-family: Georgia, serif;
   font-weight: 400;
   font-size: 26px;
 }
 
 #greeting {
-  font-family: Georgia, serif;
   color: rgb(53, 49, 49);
   font-weight: 900;
   font-size: 30px;
@@ -162,7 +177,6 @@ article {
 }
 
 form {
-  font-family: Georgia, serif;
   align-items: center;
   margin-left: 23%;
   margin-right: 20%;
@@ -207,7 +221,6 @@ form p {
 }
 
 #main-form {
-  font-family: Georgia, serif;
   margin-left: 15%;
   padding-bottom: 50px;
 }
@@ -232,12 +245,14 @@ form p {
 }
 
 footer {
-  background: linear-gradient(30deg, #efebe9, #fff3e0 55%);
+  font-size: 15px;
+  background: var(--main-bg-color);
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #52575c;
   text-align: center;
   font-style: normal;
+  border-top: 2px solid rgb(200, 200, 200);
 }
 
 .eduBox {

@@ -3,10 +3,22 @@
   --main-bg-color: #bdbdbd;
 }
 
+
 .header-box {
+  font-family: Varela Round, arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 30px;
+
+  /* font-family: Arial, Helvetica, sans-serif; */
   position: relative;
-  background: linear-gradient(75deg, #ef9a9a 10%, var(--header-bg-color1) 55%);
-  height: 200px;
+  background:  rgb(241, 241, 241);
+  /* height: 200px; */
   text-align: center;
 }
 
@@ -23,46 +35,63 @@ body {
   margin-bottom: 0px;
 }
 
-.header h1 {
+.header h2 {
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 3%;
   padding-right: 5px;
-  text-shadow: 0px 3px 0px var(--header-bg-color1),
-    0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1),
-    0px 34px 30px rgba(0, 0, 0, 0.1);
 }
 
-.contact {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding-top: 15px;
-  font-weight: bold;
-  margin-bottom: 0px;
+#menu-label{
+  display: block;
+  padding-left: 2.5%;
+  font-weight: 400;
 }
+
+#menu-label:hover{
+  font-weight: 600;
+}
+
 
 .menu {
-  font-size: 25px;
-  font-weight: bold;
-  padding-top: 50px;
+  font-size: 18px;
+  /* font-weight: bold; */
   padding-right: 20px;
+  display: block;
+  font-family: Varela Round, arial, sans-serif;
+  font-weight: normal;
+
+  line-height: 1.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: normal;
+  border-top-style: solid;
+  border-top-color: rgb(200, 200, 200);
+  border-bottom-style: solid;
+  border-bottom-color: rgb(200, 200, 200);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .menu li {
   text-decoration: none;
   list-style: none;
-  display: inline;
+  display: block;
 }
 
 .menu li a {
-  color: #ffffff;
+  color: rgb(63, 63, 63);
   margin: 100px;
   height: 40px;
   line-height: 50px;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .menu li a:hover {
   color: #040404;
+  font-weight: 600;
 }
 
 ol,
@@ -395,15 +424,15 @@ table td {
   }
 }
 
-#happy-balls{
+#happy-balls {
   height: 300px;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 50px;
-  background-color: #E1F5FE;
+  background-color: #e1f5fe;
   overflow: hidden;
 }
 
-#js-project{
+#js-project {
   text-align: center;
 }

@@ -13,13 +13,14 @@ function randomColor() {
   let r = Math.floor(Math.random() * 255);
   let g = Math.floor(Math.random() * 255);
   let b = Math.floor(Math.random() * 255);
-  let a = Math.ceil(Math.random() * 10) / 10; // (0-1] for a
+  let a = Math.ceil(Math.random() * 5) / 10; // (0-0.6] for 'a'
   // we use ceil here for a because we don't want it fully transparent.
   return "rgba(" + r + "," + g + "," + b + "," + a + ")";
 }
 
 console.log(randomColor());
 
+// Ball class
 class Ball {
   constructor(x, y, r, color, velX, velY) {
     this.x = x;
@@ -43,6 +44,7 @@ class Ball {
   // update method
   updateBall() {
     if (this.x + this.r >= canvas.width) {
+      // when reach X boundary
       this.velX = -this.velX;
     }
     if (this.x - this.r <= 0) {
@@ -50,6 +52,7 @@ class Ball {
     }
 
     if (this.y + this.r >= canvas.height) {
+      //when reach Y boundary
       this.velY = -this.velY;
     }
     if (this.y - this.r <= 0) {
@@ -76,12 +79,13 @@ function createBall() {
   return new Ball(ballX, ballY, ballR, colorOfBall, velX, velY);
 }
 
-// now we create 25 balls and keep in the array
+// now we create 35 balls and keep in the array
 let balls = [];
-for (let i = 0; i < 25; i++) {
+for (let i = 0; i < 35; i++) {
   balls.push(createBall());
 }
 
+//loop it and call updateBall
 function animate() {
   //clean the canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -91,4 +95,5 @@ function animate() {
   }
   requestAnimationFrame(animate);
 }
+
 animate();

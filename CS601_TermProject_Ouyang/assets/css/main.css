@@ -118,10 +118,17 @@ ul {
   padding-right: 20px;
 }
 
+.midTitle {
+  padding-top: 5px;
+  text-align: center;
+}
+
 .summary {
+  padding-left: 20px;
+  padding-right: 5px;
   color: hsl(0, 0%, 6%);
   font-family: Georgia, serif;
-  font-size: 19px;
+  font-size: 0.9em;
   line-height: 1.8em;
   text-transform: none;
   text-decoration: none;
@@ -129,7 +136,8 @@ ul {
   font-style: normal;
   margin-left: 12%;
   margin-right: 10%;
-/*   
+  text-align: justify;
+  /*   
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -137,30 +145,71 @@ ul {
 }
 
 .photo {
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 2px solid rgb(200, 200, 200);
-  margin-left: 10%;
+  border-top: 3px solid rgb(200, 200, 200);
+  border-bottom: 3px solid rgb(200, 200, 200);
+  margin-left: 14%;
   margin-right: 10%;
 }
 
-#selfie {
-  border-radius: 50%;
-  width: 200px;
-  margin-left: 20px;
+.photo-line {
+  display: inline-block;
+  width: 220px;
+  /* border-bottom: 2px solid rgb(200, 200, 200); */
+  margin-bottom: 10%;
 }
 
-#selfie:hover {
+#selfie {
+  /* border-radius: 50%; */
+  width: 50%;
+  /* margin-left: 20px; */
+  vertical-align: middle;
+}
+
+#read-more-main {
+  font-size: 18px;
+  line-height: 1.6em;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#read-more-main:hover {
+  color: rgb(82, 82, 82);
+}
+
+#work-beining-photo {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* #selfie:hover {
   transition: all 1s;
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   transform: rotate(360deg);
-}
+} */
 
-article {
+/* article {
   padding-left: 20px;
   padding-right: 20px;
   text-align: justify;
+} */
+
+#philosophy {
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1em;
+}
+#philosophy p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 #main-box {
@@ -237,11 +286,6 @@ form p {
 
 #submit-button-box {
   padding-bottom: 50px;
-}
-
-.midTitle {
-  padding-top: 30px;
-  text-align: center;
 }
 
 footer {

@@ -16,8 +16,10 @@ createApp({
 
   methods: {
     increment() {
-      this.counter += 1;
+      this.counter += 1;  // counter practice in Vue.js 
     },
+
+    // hover over the image, changing img using "mouseover" and "mouseleave"
     mouseover() {
       this.pictureTrans = "assets/kitten.png";
     },

@@ -429,7 +429,7 @@ table td {
   padding-right: 20px;
 }
 
-.work-title{
+.work-title {
   padding-top: 20px;
   margin-top: 0px;
   padding-left: 1.5%;
@@ -451,10 +451,6 @@ table td {
   margin-right: 15%;
   font-weight: normal;
 }
-
-
-
-
 
 #juliet {
   flex-basis: 400px;
@@ -532,4 +528,20 @@ table td {
 
 #js-project {
   text-align: center;
+}
+
+.top-link {
+  width: 35px;
+  position: fixed;
+  right: 3%;
+  top: 90%;
+}
+
+
+.top-link:hover {
+  width: 38px;
+  transition: all 1s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
 }

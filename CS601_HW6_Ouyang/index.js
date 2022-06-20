@@ -16,7 +16,8 @@ createApp({
 
   methods: {
     increment() {
-      this.counter += 1;  // counter practice in Vue.js 
+      this.counter += 1; // counter practice in Vue.js
+      console.log(this.counter);
     },
 
     // hover over the image, changing img using "mouseover" and "mouseleave"
@@ -48,7 +49,6 @@ createApp({
         this.bigCatInfo = "";
       }
     },
-
 
     //using fetch to get a json file which store kitten picture url and info
     showKit() {

@@ -358,7 +358,7 @@ table td {
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
-  background: linear-gradient(30deg, #bdbdbd, #eceff1 55%);
+  background: linear-gradient(rgb(241, 241, 241), var(--main-bg-color));
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -428,6 +428,33 @@ table td {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.work-title{
+  padding-top: 20px;
+  margin-top: 0px;
+  padding-left: 1.5%;
+  padding-bottom: 10px;
+}
+
+.work-project {
+  text-align: justify;
+  margin-left: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.work-project li {
+  list-style-type: disc;
+  margin-left: 5%;
+  margin-right: 15%;
+  font-weight: normal;
+}
+
+
+
+
 
 #juliet {
   flex-basis: 400px;

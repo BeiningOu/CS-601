@@ -1,0 +1,23 @@
+[
+  {
+    "projectName": "Improving the user interface of 3DμF, an Interactive Design Environment for Continuous Flow  Microfluidic Devices    June 2021 - Sep 2021",
+    "projectContent": [
+      "Open-source project. A specialized toolset for automating the design process of microfluidic devices.",
+      "Contributions to the graphics and user interface elements including zoom sliders, file uploading interface, and tooltips are optimized and updated in Vue.js."
+    ]
+  },
+  {
+    "projectName": "System design and analysis: A system used to organize in-person and virtual events    Oct 2021",
+    "projectContent": [
+      "Term project. Designed a system for scheduling events. Object-oriented methods; system feasibility; requirements analysis, including user stories, user case, functional & non-functional requirements.",
+      "Included UML, class models, sequence diagrams, data flow, main class design and implementation, GUI sketches."
+    ]
+  },
+  {
+    "projectName": "Pulsed UV Light Inactivation of Salmonella & E. coli in Liquid Egg White.   Aug 2017 - May 2019",
+    "projectContent": [
+      "Master's Thesis. Developed a protocol to decontaminate liquid eggs using pulsed UV systems.",
+      "Hands-on experiences in microbiological testing methods, data analysis, method development, and qualifications."
+    ]
+  }
+]

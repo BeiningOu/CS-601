@@ -1,0 +1,20 @@
+[
+  {
+    "companyInfo": "Boston University - CIDAR Lab --- Software Engineer Intern ---   June 2021-Aug 2021",
+    "jobContent": [
+      "Research: develop software & programs applied to synthetic biology; contribute to website components of plasmid visualization.",
+      "Develop software to analyze sequences (plasmids, RNA, protein) to meet IGSC standards; screen and identify potentially dangerous sequences.",
+      "Using Vue, writing several key components to lab infrastructure."
+    ]
+  },
+
+  {
+    "companyInfo": "XENON Corporation ---  Engineer team  --- Nov 2019 - Apr 2021",
+    "jobContent": [
+      "Develop test protocols for different biological challenges.",
+      "Lab and project management experience.",
+      "Perform biological testing onsite and offsite including inoculation, incubation, and monitoring.",
+      "Write reports and publish data relating to test data."
+    ]
+  }
+]

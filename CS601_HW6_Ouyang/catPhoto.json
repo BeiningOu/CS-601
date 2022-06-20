@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Kitten",
+    "url": "assets/kitten2.jpg",
+    "info": "I am the kitten!"
+  },
+  { "name": "Big cat", "url": "assets/bigCat2.jpg", "info": "I am the big cat!" }
+]

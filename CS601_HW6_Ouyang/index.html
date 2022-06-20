@@ -35,36 +35,45 @@
       </div>
 
       <div class="wrap">
-        <p> v-if practice.</p>
-        <button @click="bigCat = !bigCat">
+        <p>v-if practice.</p>
+        <button @click="showBigCat">
           {{!bigCat ? 'Show big cat' : 'Hide big cat'}}
         </button>
         <img
           id="big-cat"
           v-if="bigCat"
-          src="assets/bigCat.jpg"
+          :src="bigCatImg"
           alt=" big cat"
           width="200"
         />
+        <p>{{bigCatInfo}}</p>
       </div>
 
       <div class="wrap">
-        <p> v-show practice.</p>
-        <button @click="showKitten = !showKitten">
+        <p>v-show practice.</p>
+        <button @click="showKit">
           {{!showKitten ? 'Show kitten' : 'Hide kitten'}}
         </button>
         <img
           v-show="showKitten"
           id="small-cat"
-          src="assets/kitten.png"
+          :src="kittenImg"
           alt="kitten"
           width="200"
         />
+        <p>{{kittenInfo}}</p>
       </div>
     </div>
 
     <footer>
       <address>Contact: <a href="mailto:bouyang@bu.edu">Email me</a></address>
+      <p class="citation">
+        Pictures come from --- https://www.flickr.com/photos/tambako/2473970479
+        || https://icatcare.org/advice/helping-your-new-cat-or-kitten-settle-in/
+        || https://en.wiktionary.org/wiki/cat ||
+        https://en.wiktionary.org/wiki/kitten#/media/File:Iris_cat.jpg
+      </p>
+
       <p>Copyright 2022. Beining Ouyang. All Rights Reserved.</p>
     </footer>
   </body>

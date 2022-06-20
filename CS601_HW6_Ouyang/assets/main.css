@@ -71,7 +71,9 @@ footer {
 footer address {
   margin-top: 8px;
 }
-
+.citation{
+  font-size: 10px;
+}
 footer a {
   margin: 15px;
 }
